@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.10.12 on linux)" generated="2025-11-10T21:45:38.167871" rpa="false" schemaversion="5">
+<suite id="s1" name="Api Testing Usuarios" source="/media/carlos/158cb716-3f93-4fef-9e30-1100a63d4228/@home/carlos/cursoUdemy/robot_Amazon_/apitesting/tests/api_testing_usuarios.robot">
+<test id="s1-t1" name="Cenário 01 cadastrar um novo usuário com sucesso na ServeRest" line="12">
+<kw name="Criar um usuário novo" owner="api_testing_usuarios">
+<kw name="Generate Random String" owner="String">
+<msg time="2025-11-10T21:45:38.245815" level="INFO">${palavra_aleatoria} = HypF</msg>
+<var>${palavra_aleatoria}</var>
+<arg>length=4</arg>
+<arg>chars=[LETTERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2025-11-10T21:45:38.245427" elapsed="0.000421"/>
+</kw>
+<kw name="Convert To Lower Case" owner="String">
+<msg time="2025-11-10T21:45:38.246137" level="INFO">${palavra_aleatoria} = hypf</msg>
+<var>${palavra_aleatoria}</var>
+<arg>${palavra_aleatoria}</arg>
+<doc>Converts string to lower case.</doc>
+<status status="PASS" start="2025-11-10T21:45:38.245970" elapsed="0.000192"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2025-11-10T21:45:38.246874" level="INFO">${EMAIL_TESTE} = hypf@emailteste.com</msg>
+<arg>${EMAIL_TESTE}</arg>
+<arg>${palavra_aleatoria}@emailteste.com</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2025-11-10T21:45:38.246268" elapsed="0.000651"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-10T21:45:38.247146" level="INFO">hypf@emailteste.com</msg>
+<arg>${EMAIL_TESTE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-10T21:45:38.247022" elapsed="0.000165"/>
+</kw>
+<status status="PASS" start="2025-11-10T21:45:38.244753" elapsed="0.002489"/>
+</kw>
+<status status="PASS" start="2025-11-10T21:45:38.243595" elapsed="0.003809"/>
+</test>
+<status status="PASS" start="2025-11-10T21:45:38.168924" elapsed="0.078916"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Api Testing Usuarios" id="s1" pass="1" fail="0" skip="0">Api Testing Usuarios</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
